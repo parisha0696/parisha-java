@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner scan=new Scanner(System.in);
+        int m;
+        m=scan.nextInt();
+        if(m>=90)
+        {
+           
+                System.out.println("A");
+            }
+        else if(m>=70)
+        {
+            System.out.println("B");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+        
+    }
+}
