@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        String S=scan.nextLine();             
+        StringBuilder sb=new StringBuilder(S);  
+
+        System.out.println(sb.length());          
+        System.out.println(sb.capacity());       
+    }
+}
