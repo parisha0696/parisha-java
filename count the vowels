@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner scan=new Scanner(System.in);
+      String  b=scan.nextLine();
+        int vowels=0;
+        int consonants=0;
+        
+        for(char ch:b.toCharArray()){
+        switch(Character.toLowerCase(ch))
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                vowels++;
+                break;
+            default:
+                consonants++;
+    }
+}
+    System.out.println(vowels);
+}
+}
