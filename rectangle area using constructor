@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+ class Solution {
+    int length;
+    int breadth;
+    Solution(int l,int b)
+    {
+        length=l;
+        breadth=b;
+  
+    }
+public int calculateArea() {
+    int  area=length*breadth;
+    return area;
+}
+void display()
+    {
+      
+        System.out.println("Area:"+calculateArea());
+    }
+}
+public class Main {
+    public static void main(String[]args)
+    { 
+        Scanner scan=new Scanner(System.in);
+       int l=scan.nextInt();
+       int b=scan.nextInt();
+        Solution s1=new Solution(l,b);
+        s1.display();
+    }
+}
