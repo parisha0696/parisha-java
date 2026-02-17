@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+
+ class Person {
+    String name;
+    
+    }
+class Employee extends Person {
+    double salary;
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        
+        Employee emp=new Employee();
+         emp.name=scan.next();
+        emp.salary=scan.nextDouble();
+      System.out.println("Name:"+emp.name);
+      System.out.println("Salary:"+emp.salary);    
+        
+        
+    }
+}
