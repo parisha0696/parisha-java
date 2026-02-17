@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+
+        String str=scan.nextLine();   
+        char oldChar=scan.nextLine().charAt(0);  
+        char newChar=scan.nextLine().charAt(0); 
+
+        String result="";
+
+        for (int i=0;i<str.length();i++) {
+            if (str.charAt(i)==oldChar) {
+                result+=newChar;
+            } else {
+                result+=str.charAt(i);
+            }
+        }
+
+        System.out.print(result);
+    }
+}
