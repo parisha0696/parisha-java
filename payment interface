@@ -1,0 +1,40 @@
+import java.util.Scanner;
+interface Payment {
+    void pay(int amount);
+}
+class CreditCard implements Payment {
+    public void pay(int amount) {
+        System.out.println(amount + " is paid using CreditCard");
+    }
+
+}
+
+class UPI implements Payment {
+    public void pay(int amount) {
+        System.out.println(amount + " is paid using UPI");
+    }
+}
+class Cash implements Payment {
+    public void pay(int amount) {
+        System.out.println(amount + " is paid using Cash");
+    }
+
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String method = sc.nextLine();
+        int amount = sc.nextInt();
+        Payment p;
+        if (method.equals("CreditCard")) {
+            p = new CreditCard();
+        } else if (method.equals("UPI")) {
+            p = new UPI();
+        } else if (method.equals("Cash")) {
+            p = new Cash();
+        } else {
+            return;
+        }
+        p.pay(amount);
+    }
+}
