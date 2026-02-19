@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+class SumCalculator {
+    int sum(int a, int b) {
+        return a + b;
+    }
+    int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+    double sum(double a, double b) {
+        return a + b;
+    }
+}
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        SumCalculator calc = new SumCalculator();
+
+        if (scan.hasNextDouble()) {
+
+            double a = scan.nextDouble();
+
+            if (scan.hasNextDouble()) {
+                double b = scan.nextDouble();
+
+                if (scan.hasNextDouble()) {
+
+                    double c = scan.nextDouble();
+
+                    System.out.println((int)calc.sum((int)a, (int)b, (int)c));
+
+                } else {
+
+                    if (a%1!=0||b%1!=0) {
+
+                        System.out.println(calc.sum(a,b));
+
+                    } else {
+
+                        System.out.println(calc.sum((int)a,(int)b));
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        
